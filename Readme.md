@@ -10,4 +10,4 @@ Features
 
 ## Usage ##
 
-See the demo for an example of usage.
+[See the demo](http://htmlpreview.github.com/?https://github.com/javiermarinros/mystique-slider/blob/master/demo.html) for an example of usage.
