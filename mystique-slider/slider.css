@@ -1,0 +1,159 @@
+
+
+.mystique-slider{
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+/* some effects look nicer without overflow, so we control this trough a class */
+.no-overflow{ overflow: hidden; }
+
+.mystique-slider .loading{
+    width: 158px;
+    height: 32px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    background: #333;
+    background: rgba(0,0,0, 0.5) url(lh16b.gif) no-repeat center center;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+.mystique-slider .next-slide{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.mystique-slider .slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    display: none;
+}
+
+/* make first slide visible during load */
+.mystique-slider .slide.first{ display: block; }
+
+/* dynamic, only valid if slider is active */
+.mystique-slider .link{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 5;
+    text-decoration: none;
+}
+
+
+.mystique-slider .i-controls{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.mystique-slider .pager{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 16;
+}
+
+.mystique-slider .pager a{
+    background: transparent url(i-ctrls.png) no-repeat left top;
+    width: 15px;
+    height: 15px;
+    display: block;
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.mystique-slider .pager a.current,
+.mystique-slider .pager a.current:hover{
+    background-position: -30px top;
+}
+
+.mystique-slider .pager a:hover{
+    background-position: -15px top;
+}
+
+.mystique-slider a.prev,
+.mystique-slider a.next{
+    background: transparent url(i-ctrls.png) no-repeat 0px -16px;
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    overflow: hidden;
+    z-index: 16;
+    top: 50%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.mystique-slider a.prev{
+    left: 20px;
+}
+
+.mystique-slider a.next{
+    background-position: right -16px;
+    right: 20px;
+}
+
+.mystique-slider a.prev:hover{background-position: 0px -108px;}
+.mystique-slider a.next:hover{background-position: right -108px;}
+
+.mystique-slider .caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 15;
+    display: none;
+    padding: 20px;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+
+/* show caption by default if jquery/js is disabled, or if we have only one slide (slider disabled in both cases) */
+.no-js .mystique-slider .caption, .mystique-slider.single .caption{ display: block; }
+
+.mystique-slider h3{
+    font-weight: bold;
+    font-size: 150%;
+    line-height: 150%;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.mystique-slider .caption.push-left{
+    width: 30%;
+    height: 100%;
+    top:0;
+}
+
+.mystique-slider .caption.push-right{
+    width: 30%;
+    height: 100%;
+    left: auto;
+    right: 0;
+    top:0;
+}

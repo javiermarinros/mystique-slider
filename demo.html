@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>mystique-slider</title>
+        <link type="text/css" rel="stylesheet" href="mystique-slider/slider.css"/>
+    </head>
+    <body>
+
+        <div id="gallery" style="width:675px;height:450px;" class="mystique-slider" data-controls="pager,arrows">
+            <div class="slide">
+                <a href="http://en.wikipedia.org/wiki/Amphiprioninae"><img src="demo/slide1.jpg" /></a>
+                <div class="caption">
+                    <h3>Clownfish</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim metus, gravida vel rutrum non, interdum non ligula. Pellentesque imperdiet nulla in augue pulvinar at vestibulum dui faucibus. Nullam diam nunc, dignissim id dapibus in, ultricies tristique ante.
+                </div>
+            </div>
+            <div class="slide" data-delay="1000">
+                <a href="http://en.wikipedia.org/wiki/Lion"><img src="demo/lion.jpg" /></a>
+                <div class="caption push-right">
+                    <h3>Lion</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim metus, gravida vel rutrum non, interdum non ligula. Pellentesque imperdiet nulla in augue pulvinar at vestibulum dui faucibus. Nullam diam nunc, dignissim id dapibus in, ultricies tristique ante.
+                </div>
+            </div>
+            <div class="slide" data-delay="1000">
+                <a href="http://en.wikipedia.org/wiki/Jellyfish"><img src="demo/jelly.jpg" /></a>
+                <div class="caption push-right">
+                    <h3>Jellyfish</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim metus, gravida vel rutrum non, interdum non ligula. Pellentesque imperdiet nulla in augue pulvinar at vestibulum dui faucibus. Nullam diam nunc, dignissim id dapibus in, ultricies tristique ante.
+                </div>
+            </div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="mystique-slider/slider.js"></script>
+        <script type="text/javascript">$(function(){ $("#gallery").slider() });</script>
+    </body>
+</html>
